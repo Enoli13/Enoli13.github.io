@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ESP32 Marauder Türkçe GUI Paneli ve Flash Scripti (Linux, Arch, CachyOS)</title>
+<meta name="description" content="Ekransız ESP32-WROOM&#x27;a ESP32 Marauder firmware yükleyen script ve Marauder komutlarını düğmelerle kullanan Türkçe Python GUI kontrol paneli. Arch Linux ve CachyOS için.">
+<meta name="keywords" content="esp32 marauder, esp32 marauder türkçe, esp32 marauder gui, marauder flash, esp32-wroom marauder, esptool, esp32 wifi tarama, marauder linux, cachyos, arch linux">
+<meta name="author" content="Enes Kurucu (Enoli13)">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://enoli13.github.io/esp32-marauder-panel/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ESP32 Marauder Türkçe GUI Paneli ve Flash Scripti (Linux, Arch, CachyOS)">
+<meta property="og:description" content="Ekransız ESP32-WROOM&#x27;a ESP32 Marauder firmware yükleyen script ve Marauder komutlarını düğmelerle kullanan Türkçe Python GUI kontrol paneli. Arch Linux ve CachyOS için.">
+<meta property="og:url" content="https://enoli13.github.io/esp32-marauder-panel/">
+<meta property="og:locale" content="tr_TR">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "SoftwareApplication", "name": "ESP32 Marauder Panel", "description": "Ekransız ESP32-WROOM'a ESP32 Marauder firmware yükleyen script ve Marauder komutlarını düğmelerle kullanan Türkçe Python GUI kontrol paneli. Arch Linux ve CachyOS için.", "applicationCategory": "DeveloperApplication", "operatingSystem": "Linux", "url": "https://enoli13.github.io/esp32-marauder-panel/", "downloadUrl": "https://github.com/Enoli13/esp32-marauder-panel/releases/latest", "codeRepository": "https://github.com/Enoli13/esp32-marauder-panel", "inLanguage": "tr", "isAccessibleForFree": true, "offers": {"@type": "Offer", "price": "0", "priceCurrency": "TRY"}, "author": {"@type": "Person", "name": "Enes Kurucu", "alternateName": "Enoli13", "url": "https://github.com/Enoli13"}}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Ekransız ESP32'de Marauder çalışır mı?", "acceptedAnswer": {"@type": "Answer", "text": "Evet, seri port CLI üzerinden; bu panel o CLI'yi grafik arayüzle sarar."}}]}]</script>
+<style>*{box-sizing:border-box}body{margin:0;font:17px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:#0d1117;color:#e6edf3}
+a{color:#58a6ff}main,header,footer{max-width:860px;margin:0 auto;padding:0 20px}header{padding-top:28px}nav a{margin-right:14px;font-size:15px}
+h1{font-size:2rem;line-height:1.25;margin:28px 0 8px}h2{margin-top:40px;border-bottom:1px solid #30363d;padding-bottom:6px}.lead{font-size:1.1rem;color:#c9d1d9}
+.btn{display:inline-block;padding:10px 18px;border-radius:8px;background:#238636;color:#fff;text-decoration:none;font-weight:600;margin:6px 8px 6px 0}.btn.alt{background:#21262d;border:1px solid #30363d}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}.card{background:#161b22;border:1px solid #30363d;border-radius:10px;padding:16px}.card h3{margin:0 0 6px;font-size:1.05rem}
+.tags{color:#8b949e;font-size:14px}footer{color:#8b949e;font-size:14px;padding:40px 20px}dt{font-weight:600;margin-top:14px}dd{margin:4px 0 0}</style>
+</head>
+<body>
+<header><nav><a href="/">Ana sayfa</a><a href="/ozgurluk-kilidi/">Özgürlük Kilidi</a><a href="/dopamed/">Dopamed</a><a href="/odak/">Odak</a><a href="/enolink/">Enolink!</a><a href="/esp32-marauder-panel/">ESP32 Marauder Panel</a><a href="/msi-fan-control/">MSI Fan Control Center</a></nav></header>
+<main>
+<h1>📡 ESP32 Marauder — Linux araç takımı ve Türkçe panel</h1>
+<p class="tags">Python · Shell · Linux · Açık kaynak · Ücretsiz</p>
+<p class="lead">Bare ESP32-WROOM (ekransız NodeMCU/DevKit) üzerinde ESP32 Marauder firmware&#x27;ini terminalden yüklemek ve seri port CLI&#x27;sini düğmeli bir Python arayüzüyle kullanmak için küçük bir araç takımı.</p>
+<a class="btn" href="https://github.com/Enoli13/esp32-marauder-panel/releases/latest">⬇ İndir</a><a class="btn alt" href="https://github.com/Enoli13/esp32-marauder-panel">GitHub'da kaynak kodu</a>
+<h2>Özellikler</h2><div class="grid"><div class="card"><h3>flash-marauder.sh</h3><p>En güncel Marauder sürümünü indirip esptool ile WROOM&#x27;a yazar.</p></div><div class="card"><h3>Tam kontrol paneli</h3><p>Tüm Marauder komutları sekmeli düğmelerle, canlı AP tablosu ve ham konsol.</p></div><div class="card"><h3>Sade tarayıcı</h3><p>Çevredeki WiFi ağlarını otomatik kanal gezerek canlı listeler.</p></div><div class="card"><h3>Komut rehberi</h3><p>Hangi düğmenin pasif, hangisinin aktif olduğu Türkçe açıklanır.</p></div></div>
+<h2>Sık sorulan sorular</h2><dl><dt>Ekransız ESP32&#x27;de Marauder çalışır mı?</dt><dd>Evet, seri port CLI üzerinden; bu panel o CLI&#x27;yi grafik arayüzle sarar.</dd></dl>
+<h2>Kaynak kod</h2><p><a href="https://github.com/Enoli13/esp32-marauder-panel">https://github.com/Enoli13/esp32-marauder-panel</a></p>
+</main>
+<footer>Enes Kurucu (Enoli13) · <a href="https://github.com/Enoli13">github.com/Enoli13</a> · Tüm projeler açık kaynak ve ücretsiz.</footer>
+</body>
+</html>
